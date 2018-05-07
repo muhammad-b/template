@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/responsive.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
 
 </head>
 
@@ -194,11 +196,46 @@
     </section>
     <!-- The team of home section -->
 
-    <!-- Home section -->
-    <section>
+    <!-- contact us section -->
+    <section id="contact-us" class="container p-5">
+        <div class="card-body text-center">
+            <h4 class="card-title">Kontakt Uns</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ">
 
+                <form>
+                    <div class="form-group row ">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="staticEmail">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-5">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-5">
+                        <label for="message-text" class="col-sm-2 col-form-label">Message:</label>
+                        <div class="col-sm-10">
+                            <textarea class=" form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-auto text-right">
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 card">
+                
+                    <div id="googleMap" class="google-maps"></div>
+            </div>
+        </div>
     </section>
-    <!-- The end of home section -->
+    <!-- The end of contact us section -->
 
     <!-- Home section -->
     <section>
@@ -212,33 +249,74 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <ul class="list-unstyled">
-                            <li>Link</li>
-                            <li>Link</li>
-                            <li>Link</li>
-                          </ul>
+                        <h5 class="card-title">
+                            <i class="fas fa-bars"></i> Menu</h5>
+                        <ul class="list-unstyled ml-3">
+                            <li>
+                                <a href="#">Kariere</a>
+                            </li>
+                            <li>
+                                <a href="#">Feedback</a>
+                            </li>
+                            <li>
+                                <a href="#">Über uns</a>
+                            </li>
+                            <li>
+                                <a href="#">Impressum</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <ul class="list-unstyled">
-                            <li>Link</li>
-                            <li>Link</li>
-                            <li>Link</li>
-                          </ul>
+                        <h5 class="card-title">
+                            <i class="fas fa-share-square"></i> Social media</h5>
+                        <ul class="list-unstyled ml-3">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-square"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter-square"></i> Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i> Instagram</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <ul class="list-unstyled">
-                            <li>Link</li>
-                            <li>Link</li>
-                            <li>Link</li>
-                          </ul>
+                        <h5 class="card-title">
+                            <i class="fas fa-address-card"> Contact card</i>
+                        </h5>
+                        <ul class="list-unstyled ml-3">
+                            <li>
+                                <a href="tel:044444444444">
+                                    <i class="fas fa-phone"></i> 04444444444</a>
+                            </li>
+                            <li>
+                                <a href="mailto:example@example.com">
+                                    <i class="fas fa-at">
+                                    </i> example@example.com</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker"></i> Königstein Str.100a
+                                    <br>
+                                    <span class="ml-3">65812 Bad Soden</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <span>Copyright © 2018. All rights reserved.</span>
                 </div>
             </div>
         </div>
@@ -248,6 +326,9 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG20xCXAAHYJW682lNspweRMsSlnoU_vU">
+    </script>
+    <script src="node_modules/bootstrap/dist/js/app.js"></script>
 </body>
 
 </html>
