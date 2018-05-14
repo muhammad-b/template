@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/Style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/responsive.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
         crossorigin="anonymous">
 
@@ -20,31 +19,37 @@
 <body>
     <!-- The header section including navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <img src="images/blomqvist_Logo_RGB.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
+            <div class="container">
+                <div class="row ">
+                    <nav class="navbar navbar-expand-lg fixed-top">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/blomqvist_Logo_RGB.png" alt="">
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-        </nav>
-    </header>
-
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Über uns</a>
+                                </li>
+                            </ul>
+                    </nav>
+                    </div>
+                </div>
+        </header>
     <!-- Home section -->
     <section>
         <div class="container">
@@ -159,40 +164,114 @@
             <h1 class="card-title">Team</h1>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <img class="card-img-top" src="http://static1.1.sqspcdn.com/static/f/468082/26748702/1450796613197/Catalina.jpg?token=XHsHege185jEMKrDbyKsn%2BPwHMk%3D"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item  active row">
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item row">
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item row">
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="card-img-top" src="images/pexels-photo-733872.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <img class="card-img-top" src="http://static1.1.sqspcdn.com/static/f/468082/26742354/1450457685647/Juergen.jpg?token=NGemgEPClFUJb%2Bb5wnVyEQiOhQM%3D"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <img class="card-img-top" src="http://static1.1.sqspcdn.com/static/f/468082/26748714/1450796891937/Oliver.jpg?token=Da5oxm%2F2MAwg%2BtAg7i6IcsFM9%2Bk%3D"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <img class="card-img-top" src="http://static1.1.sqspcdn.com/static/f/468082/26748713/1450796858300/Mark.jpg?token=tJu8P258H8bbneE%2BatNtYFJmEoc%3D"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
         </div>
+
     </section>
     <!-- The team of home section -->
 
@@ -209,13 +288,13 @@
                     <div class="form-group row ">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="staticEmail">
+                            <input type="text" class="form-control" id="email">
                         </div>
                     </div>
                     <div class="form-group row mt-5">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+                            <input type="text" class="form-control" id="email">
                         </div>
                     </div>
                     <div class="form-group row mt-5">
@@ -230,8 +309,8 @@
                 </form>
             </div>
             <div class="col-md-6 card">
-                
-                    <div id="googleMap" class="google-maps"></div>
+
+                <div id="googleMap" class="google-maps"></div>
             </div>
         </div>
     </section>
@@ -249,28 +328,26 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-bars"></i> Menu</h5>
+                        <h5 class="card-title"> Menu</h5>
                         <ul class="list-unstyled ml-3">
                             <li>
-                                <a href="#">Kariere</a>
+                                <a href="karierre.html">Kariere</a>
                             </li>
                             <li>
-                                <a href="#">Feedback</a>
+                                <a href="feedback.html">Feedback</a>
                             </li>
                             <li>
-                                <a href="#">Über uns</a>
+                                <a href="about.html">Über uns</a>
                             </li>
                             <li>
-                                <a href="#">Impressum</a>
+                                <a href="impressum.html">Impressum</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-share-square"></i> Social media</h5>
+                        <h5 class="card-title">Social media</h5>
                         <ul class="list-unstyled ml-3">
                             <li>
                                 <a href="#">
@@ -289,8 +366,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-address-card"> Contact card</i>
+                        <h5 class="card-title">Contact card</i>
                         </h5>
                         <ul class="list-unstyled ml-3">
                             <li>
